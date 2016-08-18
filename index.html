@@ -3,15 +3,39 @@ layout: default
 title: 我的Blog
 ---
 
-<div class="daohang" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+<div class="container" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
 	<div>
+	{% for post in site.posts %}
+		<li>
+			<figure>
+				<img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="img"/>
+				<figcaption>
+					<h3>{{ post.caption_header}}</h3>
+					<p>{{ post.caption }}</p>
+				</figcaption>
+			</figure>
+		</li>
+		{% endfor %}
 		
 	</div>
 	
-</div>
-<div>
+	
+	<div>
+		<ul>
+		{% for post in site.posts %}
+		<li>
+			<figure>
+				<img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/>
+				<figcaption><h3>{{ post.caption_header}}</h3><p>{{ post.caption }}</p></figcaption>
+			</figure>
+		</li>
+		{% endfor %}
+	</ul>
+
 	<div>
 		
+	</div>
+
 	</div>
 </div>
 
