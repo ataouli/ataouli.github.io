@@ -1,21 +1,22 @@
 ---
 layout: default
-title: 我的Blog
+title: 严装 有态度的装修
 ---
-
-<div class="container" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+<div class="container">
 	<div>
-	{% for post in site.posts %}
+		<ul>
+	{% for case in site.cases %}
 		<li>
 			<figure>
-				<img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="img"/>
+				<img src="{{ sitebase.url }}/img/thumb/{{ post.photo }}" alt="img"/>
 				<figcaption>
-					<h3>{{ post.caption_header}}</h3>
-					<p>{{ post.caption }}</p>
+					<h3>{{ case.content }}</h3>
+					<p>{{ case.title }}</p>
 				</figcaption>
 			</figure>
 		</li>
 		{% endfor %}
+		</ul>
 		
 	</div>
 	
@@ -25,7 +26,7 @@ title: 我的Blog
 		{% for post in site.posts %}
 		<li>
 			<figure>
-				<img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/>
+				<img src="{{ site.baseurl }}/img/large/{{ post.photo }}" alt="img"/>
 				<figcaption><h3>{{ post.caption_header}}</h3><p>{{ post.caption }}</p></figcaption>
 			</figure>
 		</li>
@@ -39,17 +40,25 @@ title: 我的Blog
 	</div>
 </div>
 
+
+
+<div class="posts">
+
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
+
 <ul>
 　　{% for post in site.posts %}
+    <article class="post">
 　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　{% endfor %}
-</ul>
 
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-<ul>
-　　{% for case in site.cases %}
-　　　　<li>{{ case.date | date_to_string }} <a href="{{ site.baseurl }}{{ case.url }}">{{ case.title }}</a></li>
+     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">[阅读全文]</a>
 　　{% endfor %}
+    </article>
+
 </ul>
+</div>
