@@ -30,7 +30,6 @@ skip_render:
 # Writing
 pageinate: 10
 pageinate_path: "page:num"
-markdown: kramdown
 new_post_name: :title.md # File name of new posts
 default_layout: default
 titlecase: false # Transform title into titlecase
@@ -40,17 +39,13 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-highlighter: rouge
-highlight: 
-  enable: true
-  line_number: true
-  auto_detect: ture
-  tab_replace:
-    
-syntax_highlighter: rouge
-syntax_highlighter_opts:
-    #Use existing pygments syntax highlighting css
+
+kramdown:
+  imput: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
     css_class: 'highlight'
+
 
 # Category & Tag
 default_category: categorized
