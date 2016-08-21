@@ -37,7 +37,23 @@ body {
 .main{
 	width: 1000px;
 	text-align: center;
+	margin: 0 auto;
 	
+}
+.photo{
+		width: 1000px;
+	text-align: center;
+
+}
+.photo ul li{
+	float: left;
+}
+.photo ul li img{
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 220px;
+	height: 200px;
+
 }
 
 .w1000 {

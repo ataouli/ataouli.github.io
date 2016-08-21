@@ -2,43 +2,25 @@
 layout: default
 title: 严装 有态度的装修
 ---
-<div class="container">
-	<div>
+<div class="photo">
+	
 		<ul>
-	{% for case in site.cases %}
+	{% for case in site.data.photos %}
 		<li>
-			<figure>
-				<img src="{{ sitebase.url }}/img/thumb/{{ post.photo }}" alt="img"/>
+			
+				<img src="{{ sitebase.url }}/img/thumb/{{ case.image_thumb }}" alt="img"/>
 				<figcaption>
 					<h3>{{ case.content }}</h3>
 					<p>{{ case.title }}</p>
 				</figcaption>
-			</figure>
+			
 		</li>
 		{% endfor %}
 		</ul>
 		
-	</div>
 	
-	
-	<div>
-		<ul>
-		{% for post in site.posts %}
-		<li>
-			<figure>
-				<img src="{{ site.baseurl }}/img/large/{{ post.photo }}" alt="img"/>
-				<figcaption><h3>{{ post.caption_header}}</h3><p>{{ post.caption }}</p></figcaption>
-			</figure>
-		</li>
-		{% endfor %}
-	</ul>
-
-	<div>
-		
-	</div>
-
-	</div>
 </div>
+<div class="cf"></div>
 
 
 
