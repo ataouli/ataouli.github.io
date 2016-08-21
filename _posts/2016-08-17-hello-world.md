@@ -4,9 +4,7 @@ title: 你好，我的世界
 featured: img/logo.png
 permalink: 
 ---
-<h2>{{ page.title }}</h2>
-<p>我的第五篇文章</p>
-<p>{{ page.date | date_to_string }}</p>
+
 
 
 

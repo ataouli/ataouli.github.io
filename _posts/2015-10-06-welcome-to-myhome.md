@@ -2,6 +2,7 @@
 layout: default
 title:  "Welcome to Jekyll!"
 date:  2015-10-06 15:39:40
+categories:  about
 ---
 
 ![Picture 1](img/logo.png)
