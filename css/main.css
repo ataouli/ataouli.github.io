@@ -33,6 +33,9 @@ body {
 	width: 140px;
 	margin: 0 auto;
 }
+.navi ul li a{
+	text-align: center;
+}
 
 .main{
 	width: 1000px;
