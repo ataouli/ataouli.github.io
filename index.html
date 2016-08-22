@@ -3,22 +3,22 @@ layout: default
 title: 严装 有态度的装修
 ---
 <div class="photo">
-	
+
 		<ul>
 	{% for case in site.data.photos %}
 		<li>
-			
+
 				<img src="{{ sitebase.url }}/img/thumb/{{ case.image_thumb }}" alt="img"/>
 				<figcaption>
 					<h3>{{ case.content }}</h3>
 					<p>{{ case.title }}</p>
 				</figcaption>
-			
+
 		</li>
 		{% endfor %}
 		</ul>
-		
-	
+
+
 </div>
 <div class="cf"></div>
 
@@ -27,11 +27,11 @@ title: 严装 有态度的装修
 <div class="posts">
 
 <ul>
-　　  {% for post in site.posts  offset: 0 limit: 5 %}
+　　 {% for post in site.posts  offset: 0 limit: 5 %}
     <article class="post">
-  
-    	{{% if {{ post.photo %}} <img src="img/{{ post.photo }}"> {{% endif %}}
-　　　　<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{{ post.date | date_to_string }} </li>
+
+    	{% if  post.photo %} <img src="img/{{ post.photo }}"> {% endif %}
+　　　　<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 
       <div class="entry">
         {{ post.excerpt }}
@@ -43,7 +43,7 @@ title: 严装 有态度的装修
 
     </article>
      　　{% endfor %}
-   
+
 
 </ul>
 </div>
@@ -56,9 +56,10 @@ title: 严装 有态度的装修
         <br>
         <span class="meta date">{{ post.date | date_to_string }}</span>
         <br>
+				<hr>
     {% endfor %}
     </div>
-	
+
 </div>
 
 

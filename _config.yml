@@ -1,5 +1,5 @@
 # Site
-name: 
+name:
 title: 严装｜名格
 subtitle: 有态度的装修网站 品质家装
 description: 品质家装 装修 我们是认真的
@@ -10,7 +10,7 @@ keywords: 品质家装  工装 装饰 装修 装潢
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: 
+url:
 root: /
 permalink: /:title/
 permalink_defaults:
@@ -26,6 +26,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+markdown: 
 
 # Writing
 pageinate: 10
@@ -74,12 +75,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: 
+  github:
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -91,4 +92,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-

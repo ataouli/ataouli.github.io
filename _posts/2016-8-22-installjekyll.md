@@ -1,9 +1,9 @@
 ---
-layout: default
-date:   2014-04-06 23:26:12
+layout: page
+date: 2014-04-06 23:26:12
 photo: 1.png
 caption_header: 美澜城 125平
-caption:
+caption: 
 categories: about
 permalink:
 ---
@@ -17,8 +17,7 @@ permalink:
 
 2. 安装ruby 下载ruby [http://rubyinstaller.org/downloads](http://rubyinstaller.org/downloads/)
  下载证书 [cacert.pem](http://curl.haxx.se/ca/cacert.pem )
- 放在 ruby 安装目录 例如： c:\ruby2000\bin
-
+放在 ruby 安装目录 例如： c:\ruby2000\bin
  设置环境变量
 
  ![环境变量1](/img/h/1.png)
@@ -36,9 +35,9 @@ permalink:
 
 4. 安装 github
   可以参照 https://pages.github.com
-  下载github [https://desktop.github.com](https://desktop.github.com)
+  下载github <https://desktop.github.com>
 
-5. 项目目录输入 `jekyll server` 在浏览器 输入 http://127.0.0.1:4000 就可以访问了
+5. 项目目录输入 `jekyll server` 在浏览器 输入 <http://127.0.0.1:4000> 就可以访问了
 
   >参考网址
   https://pages.github.com
