@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Windows 7 安装 ruby jekyll 在github pages 上搭建静态个人博客
 date: 2014-04-06 23:26:12
 photo: 1.png
 caption_header: 美澜城 125平
